@@ -1,7 +1,7 @@
 # AI-based Life Management and Aging Preparation Decision System
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/system_architecture.png" alt="System Architecture" width="800" />
+  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/system_architecture.svg" alt="System Architecture" width="800" />
 
   <h3>🌟 Powered by Ucaretron Inc. Patented Technology 🌟</h3>
 </div>
