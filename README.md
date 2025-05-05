@@ -1,113 +1,9 @@
 # AI-based Life Management and Aging Preparation Decision System
 
 <div align="center">
-  <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background elements -->
-    <defs>
-      <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#1a3a8f" stop-opacity="0.2"/>
-        <stop offset="100%" stop-color="#42b0d1" stop-opacity="0.2"/>
-      </linearGradient>
-    </defs>
-    
-    <!-- Decorative background -->
-    <rect x="0" y="0" width="800" height="600" fill="url(#bgGradient)"/>
-    <circle cx="400" cy="300" r="280" fill="none" stroke="#5a8de3" stroke-width="1.5" stroke-dasharray="8,8"/>
-    
-    <!-- System Core -->
-    <g transform="translate(400, 300)">
-      <circle cx="0" cy="0" r="80" fill="#2c3e50" stroke="#3498db" stroke-width="3"/>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">AI Life Management</text>
-      <text x="0" y="25" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">Core System</text>
-    </g>
-    
-    <!-- Module 110: Data Collection -->
-    <g transform="translate(275, 150)">
-      <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
-      <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Data Collection</text>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (110)</text>
-      <path d="M0,15 m-25,0 l10,10 l10,-10 l10,10 l10,-10 l10,10" stroke="#ffffff" stroke-width="2" fill="none"/>
-    </g>
-    
-    <!-- Module 120: AI Analysis -->
-    <g transform="translate(525, 150)">
-      <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
-      <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">AI Analysis</text>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (120)</text>
-      <g transform="translate(-30, 15)">
-        <circle cx="0" cy="0" r="8" fill="#ffffff"/>
-        <circle cx="30" cy="0" r="8" fill="#ffffff"/>
-        <circle cx="60" cy="0" r="8" fill="#ffffff"/>
-      </g>
-    </g>
-    
-    <!-- Module 130: Prediction Engine -->
-    <g transform="translate(650, 300)">
-      <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
-      <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Prediction</text>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (130)</text>
-      <polyline points="-30,15 -20,25 -10,10 0,30 10,20 20,30 30,15" stroke="#ffffff" stroke-width="2" fill="none"/>
-    </g>
-    
-    <!-- Module 140: Monitoring -->
-    <g transform="translate(525, 450)">
-      <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
-      <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Monitoring</text>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (140)</text>
-      <rect x="-30" y="10" width="60" height="15" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
-      <rect x="-25" y="15" width="50" height="5" rx="1" fill="#ffffff"/>
-    </g>
-    
-    <!-- Module 150: Security -->
-    <g transform="translate(275, 450)">
-      <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#f39c12" stroke="#d35400" stroke-width="2"/>
-      <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Security</text>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (150)</text>
-      <path d="M0,15 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0" fill="none" stroke="#ffffff" stroke-width="2"/>
-      <path d="M-5,-5 L0,-12 L5,-5 L10,0 L5,5 L0,12 L-5,5 L-10,0 Z" transform="translate(0, 15)" fill="#ffffff"/>
-    </g>
-    
-    <!-- Module 160: User Interface -->
-    <g transform="translate(150, 300)">
-      <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#1abc9c" stroke="#16a085" stroke-width="2"/>
-      <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">User Interface</text>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (160)</text>
-      <rect x="-25" y="10" width="50" height="30" rx="3" fill="none" stroke="#ffffff" stroke-width="2"/>
-      <line x1="-15" y1="20" x2="15" y2="20" stroke="#ffffff" stroke-width="2"/>
-      <line x1="-15" y1="30" x2="5" y2="30" stroke="#ffffff" stroke-width="2"/>
-    </g>
-    
-    <!-- Connection lines -->
-    <g stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5">
-      <!-- Data Collection to Core -->
-      <line x1="325" y1="200" x2="370" y2="255"/>
-      
-      <!-- AI Analysis to Core -->
-      <line x1="475" y1="200" x2="430" y2="255"/>
-      
-      <!-- Prediction to Core -->
-      <line x1="575" y1="300" x2="480" y2="300"/>
-      
-      <!-- Monitoring to Core -->
-      <line x1="475" y1="400" x2="430" y2="345"/>
-      
-      <!-- Security to Core -->
-      <line x1="325" y1="400" x2="370" y2="345"/>
-      
-      <!-- User Interface to Core -->
-      <line x1="225" y1="300" x2="320" y2="300"/>
-    </g>
-    
-    <!-- Ucaretron Badge -->
-    <g transform="translate(400, 560)">
-      <rect x="-150" y="-25" width="300" height="50" rx="25" fill="#2c3e50" stroke="#3498db" stroke-width="2"/>
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">Powered by Ucaretron Inc. Patented Technology</text>
-      <g transform="translate(-130, 0)">
-        <circle cx="0" cy="0" r="15" fill="#3498db"/>
-        <path d="M-5,-5 L0,-12 L5,-5 L10,0 L5,5 L0,12 L-5,5 L-10,0 Z" fill="#ffffff"/>
-      </g>
-    </g>
-  </svg>
+  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/system_architecture.png" alt="System Architecture" width="800" />
+
+  <h3>🌟 Powered by Ucaretron Inc. Patented Technology 🌟</h3>
 </div>
 
 This system leverages cutting-edge artificial intelligence, big data analytics, predictive modeling, and healthcare technologies to predict individual life expectancy and provide personalized solutions for aging preparation.
@@ -116,26 +12,52 @@ This system leverages cutting-edge artificial intelligence, big data analytics, 
 
 The system consists of several integrated modules:
 
-1. **Data Collection Module (110)** - Collects various types of user data including health metrics, lifestyle information, and environmental factors through sensors, manual inputs, and external APIs.
+### 🔹 Data Collection Module (110)
+- Collects various types of user data including health metrics, lifestyle information, and environmental factors
+- Interfaces with wearable sensors, medical devices, and smart home systems
+- Securely stores data in a privacy-compliant database system
+- Implements real-time data validation and preprocessing
 
-2. **AI Analysis Module (120)** - Analyzes collected data using deep learning and machine learning algorithms to identify patterns and trends in users' health and lifestyle.
+### 🔹 AI Analysis Module (120)
+- Processes collected data using deep learning and machine learning algorithms
+- Identifies patterns and trends in users' health and lifestyle data
+- Employs federated learning techniques for enhanced privacy protection
+- Utilizes natural language processing for medical record analysis
 
-3. **Prediction and Recommendation Engine (130)** - Provides personalized recommendations based on predictive models for life expectancy, health optimization, and aging preparation.
+### 🔹 Prediction and Recommendation Engine (130)
+- Generates personalized health forecasts and life expectancy predictions
+- Provides tailored recommendations for lifestyle improvements
+- Develops aging preparation strategies based on multiple scenarios
+- Creates financial and healthcare planning roadmaps
 
-4. **Monitoring and Management Module (140)** - Continuously monitors system performance and user progress, adjusting recommendations as needed.
+### 🔹 Monitoring and Management Module (140)
+- Tracks user adherence to recommendations and health plans
+- Analyzes system performance and prediction accuracy
+- Provides automated alerts for critical health indicators
+- Generates periodic progress reports and insights
 
-5. **Security Module (150)** - Ensures data security and privacy through advanced encryption, access control, and blockchain technology.
+### 🔹 Security Module (150)
+- Implements multi-layered data encryption and access control
+- Ensures compliance with international privacy regulations
+- Utilizes blockchain technology for secure medical record integration
+- Conducts regular security audits and vulnerability assessments
 
-6. **User Interface Module (160)** - Provides intuitive interfaces for user interaction through mobile apps, web platforms, VR/AR, and AI voice assistants.
+### 🔹 User Interface Module (160)
+- Delivers intuitive mobile and web application interfaces
+- Supports voice-controlled AI assistants for hands-free interaction
+- Integrates AR/VR visualization tools for health data representation
+- Provides accessibility features for users of all abilities
 
 ## Key Technologies
 
-- Ultra-high-speed communication, edge AI, and ultra-high-density semiconductor sensor technology
-- Electrochemical impedance measurement and analysis
-- Advanced AI algorithms (deep learning, machine learning, NLP, reinforcement learning)
-- Blockchain technology for medical record integration
-- Security technologies (encryption, access control, differential privacy)
-- User interface technologies (mobile apps, web platforms, VR/AR, AI voice assistants)
+- **Ultra-high-speed communication**: Enables seamless data transfer between system components and external healthcare systems
+- **Edge AI**: Processes sensitive data locally on devices to enhance privacy and reduce latency
+- **Ultra-high-density semiconductor sensor technology**: Provides precise health monitoring with minimal invasiveness
+- **Electrochemical impedance measurement**: Delivers comprehensive biomarker analysis without invasive procedures
+- **Advanced AI algorithms**: Utilizes cutting-edge deep learning, reinforcement learning, and natural language processing techniques
+- **Blockchain technology**: Secures medical records and ensures data integrity throughout the system
+- **Security technologies**: Implements state-of-the-art encryption, access control, and differential privacy measures
+- **User interface technologies**: Creates engaging and accessible interaction through mobile, web, AR/VR, and voice interfaces
 
 ## System Architecture
 
