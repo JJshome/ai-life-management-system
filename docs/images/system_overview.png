@@ -1,0 +1,145 @@
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a8f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#42b0d1" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="700" height="400" fill="url(#bg-gradient)" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50" text-anchor="middle">AI Life Management System: Overview</text>
+  
+  <!-- Input Section -->
+  <g transform="translate(100, 150)" filter="url(#shadow)">
+    <rect x="-80" y="-80" width="160" height="160" rx="15" fill="#3498db" opacity="0.8"/>
+    <text x="0" y="-50" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Data Collection</text>
+    
+    <!-- Input Icons -->
+    <g transform="translate(-50, -20)">
+      <circle cx="0" cy="0" r="15" fill="#ffffff"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="18" fill="#3498db" text-anchor="middle">💓</text>
+    </g>
+    
+    <g transform="translate(0, 20)">
+      <circle cx="0" cy="0" r="15" fill="#ffffff"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="18" fill="#3498db" text-anchor="middle">🧠</text>
+    </g>
+    
+    <g transform="translate(50, -20)">
+      <circle cx="0" cy="0" r="15" fill="#ffffff"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="18" fill="#3498db" text-anchor="middle">🏃</text>
+    </g>
+    
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Health, Genetic &amp;</text>
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Lifestyle Data</text>
+  </g>
+  
+  <!-- Processing Section -->
+  <g transform="translate(350, 150)" filter="url(#shadow)">
+    <rect x="-100" y="-80" width="200" height="160" rx="15" fill="#9b59b6" opacity="0.8"/>
+    <text x="0" y="-50" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">AI Processing</text>
+    
+    <!-- Brain with gears -->
+    <path d="M-30,-20 Q-40,-40 -20,-45 Q0,-50 20,-45 Q40,-40 30,-20 Q40,0 30,20 Q40,40 20,45 Q0,50 -20,45 Q-40,40 -30,20 Q-40,0 -30,-20" 
+      fill="#ffffff" stroke="#8e44ad" stroke-width="2" transform="scale(0.8)"/>
+    
+    <!-- Gears -->
+    <g transform="translate(-25, 0) scale(0.6)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#ffffff" stroke-width="1"/>
+      <path d="M0,-15 L3,-15 L3,-20 L-3,-20 L-3,-15 Z" fill="#ffffff"/>
+      <path d="M0,15 L3,15 L3,20 L-3,20 L-3,15 Z" fill="#ffffff"/>
+      <path d="M-15,0 L-15,3 L-20,3 L-20,-3 L-15,-3 Z" fill="#ffffff"/>
+      <path d="M15,0 L15,3 L20,3 L20,-3 L15,-3 Z" fill="#ffffff"/>
+    </g>
+    
+    <g transform="translate(25, 0) scale(0.6)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#ffffff" stroke-width="1"/>
+      <path d="M10.6,-10.6 L12.7,-8.5 L16.3,-12.1 L12.1,-16.3 L8.5,-12.7 Z" fill="#ffffff" transform="rotate(45)"/>
+      <path d="M10.6,10.6 L12.7,8.5 L16.3,12.1 L12.1,16.3 L8.5,12.7 Z" fill="#ffffff" transform="rotate(45)"/>
+      <path d="M-10.6,-10.6 L-8.5,-12.7 L-12.1,-16.3 L-16.3,-12.1 L-12.7,-8.5 Z" fill="#ffffff" transform="rotate(45)"/>
+      <path d="M-10.6,10.6 L-8.5,12.7 L-12.1,16.3 L-16.3,12.1 L-12.7,8.5 Z" fill="#ffffff" transform="rotate(45)"/>
+    </g>
+    
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Deep Learning &amp;</text>
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Predictive Analytics</text>
+  </g>
+  
+  <!-- Output Section -->
+  <g transform="translate(600, 150)" filter="url(#shadow)">
+    <rect x="-80" y="-80" width="160" height="160" rx="15" fill="#2ecc71" opacity="0.8"/>
+    <text x="0" y="-50" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Life Insights</text>
+    
+    <!-- Output Elements -->
+    <!-- Life Expectancy Chart -->
+    <g transform="translate(0, -20) scale(0.8)">
+      <rect x="-40" y="-20" width="80" height="40" rx="5" fill="#ffffff"/>
+      <text x="-30" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71">Age</text>
+      <text x="-35" y="15" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71">Now</text>
+      <line x1="-25" y1="0" x2="35" y2="0" stroke="#2ecc71" stroke-width="2"/>
+      <circle cx="-15" cy="0" r="3" fill="#e74c3c"/>
+      <circle cx="25" cy="0" r="3" fill="#3498db"/>
+      <text x="15" y="15" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71">95</text>
+    </g>
+    
+    <!-- Recommendations -->
+    <g transform="translate(0, 30)">
+      <rect x="-50" y="-20" width="100" height="40" rx="5" fill="#ffffff"/>
+      <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71" text-anchor="middle">Recommendations</text>
+      <line x1="-40" y1="5" x2="-20" y2="5" stroke="#3498db" stroke-width="2"/>
+      <line x1="-40" y1="15" x2="-5" y2="15" stroke="#e74c3c" stroke-width="2"/>
+      <line x1="0" y1="5" x2="40" y2="5" stroke="#f39c12" stroke-width="2"/>
+      <line x1="5" y1="15" x2="40" y2="15" stroke="#9b59b6" stroke-width="2"/>
+    </g>
+    
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Personalized</text>
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Recommendations</text>
+  </g>
+  
+  <!-- Flow Arrows -->
+  <g stroke="#2c3e50" stroke-width="3" fill="none" filter="url(#shadow)">
+    <path d="M180,150 C220,150 230,150 270,150" marker-end="url(#arrowhead)"/>
+    <path d="M450,150 C490,150 500,150 540,150" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- User Figure -->
+  <g transform="translate(100, 300)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="25" fill="#e74c3c"/>
+    <circle cx="-8" cy="-5" r="3" fill="#ffffff"/>
+    <circle cx="8" cy="-5" r="3" fill="#ffffff"/>
+    <path d="M-10,8 Q0,15 10,8" stroke="#ffffff" stroke-width="2" fill="none"/>
+    <line x1="0" y1="25" x2="0" y2="50" stroke="#e74c3c" stroke-width="10" stroke-linecap="round"/>
+    <line x1="-15" y1="60" x2="0" y2="40" stroke="#e74c3c" stroke-width="10" stroke-linecap="round"/>
+    <line x1="15" y1="60" x2="0" y2="40" stroke="#e74c3c" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Feedback Loop -->
+  <path d="M600,250 C600,320 350,350 100,320 C100,310 100,300 100,290" 
+    stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)" filter="url(#shadow)"/>
+  <text x="350" y="360" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle" filter="url(#shadow)">
+    Continuous Monitoring &amp; Optimization
+  </text>
+  
+  <!-- Bottom Caption -->
+  <g transform="translate(350, 380)">
+    <rect x="-330" y="-15" width="660" height="30" rx="15" fill="#2c3e50" opacity="0.7"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+      Based on Ucaretron Inc. Patented Technology - Advanced AI for Life Management
+    </text>
+  </g>
+</svg>
