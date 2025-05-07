@@ -1,7 +1,7 @@
 # 🌟 AI-based Life Management and Aging Preparation Decision System 🌟
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/main_banner.png" alt="AI Life Management System" width="800" />
+  <img src="./docs/images/main_banner.png" alt="AI Life Management System" width="800" />
   
   <h3>Powered by Ucaretron Inc. Patented Technology</h3>
   <p>🚀 Predict Life Expectancy | 💓 Optimize Health | 💰 Plan Finances | 🧠 Live Smarter</p>
@@ -14,7 +14,7 @@
 The AI-based Life Management System is a cutting-edge solution that uses advanced AI to predict individual life expectancy and provide personalized recommendations for health optimization, aging preparation, and quality of life improvements.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/system_overview.png" alt="System Overview" width="700" />
+  <img src="./docs/images/system_overview.png" alt="System Overview" width="700" />
 </div>
 
 ## 🏗️ System Architecture
@@ -22,7 +22,7 @@ The AI-based Life Management System is a cutting-edge solution that uses advance
 The system consists of six integrated modules working together to deliver a comprehensive life management solution:
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/system_architecture.png" alt="System Architecture" width="800" />
+  <img src="./docs/images/system_architecture.png" alt="System Architecture" width="800" />
 </div>
 
 ### 🔹 Data Collection Module (110)
@@ -70,7 +70,7 @@ The system consists of six integrated modules working together to deliver a comp
 ## 🔬 Key Technologies
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/key_technologies.png" alt="Key Technologies" width="600" />
+  <img src="./docs/images/key_technologies.png" alt="Key Technologies" width="600" />
 </div>
 
 - **Ultra-high-speed communication**: Enables seamless data transfer between system components and external healthcare systems
@@ -99,33 +99,22 @@ source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 pip install -r requirements.txt
 
 # Run the simulation
-python simulation/run_simulation.py
+python -m simulation.run_simulation
 ```
 
 ### Quick Start
 
 ```python
-from life_management_system import LifeManagementSystem
+from simulation.run_simulation import SimulationRunner
+from simulation.visualize import ResultsVisualizer
 
-# Initialize the system
-system = LifeManagementSystem()
+# Run a simulation for a single user
+runner = SimulationRunner()
+results = runner.run_single_user_simulation()
 
-# Start the system
-system.start()
-
-# Run a complete analysis
-results = system.run_complete_analysis("user123")
-
-# Print prediction
-print(f"Predicted life expectancy: {results['life_expectancy']} years")
-print(f"Biological age: {results['biological_age']} years")
-
-# Get personalized recommendations
-recommendations = results['recommendations']
-for category, items in recommendations.items():
-    print(f"\n{category.upper()} RECOMMENDATIONS:")
-    for item in items:
-        print(f"- {item}")
+# Visualize the results
+visualizer = ResultsVisualizer()
+visualizer.visualize_life_expectancy(results["user_data"]["user_profile"]["user_id"])
 ```
 
 ## 📊 Simulation Environment
@@ -133,7 +122,7 @@ for category, items in recommendations.items():
 The system includes a comprehensive simulation environment that allows you to test its capabilities with synthetic data. The simulation includes:
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/simulation_dashboard.png" alt="Simulation Dashboard" width="800" />
+  <img src="./docs/images/simulation_dashboard.png" alt="Simulation Dashboard" width="800" />
 </div>
 
 - Synthetic user profiles with realistic health parameters
@@ -145,7 +134,14 @@ The system includes a comprehensive simulation environment that allows you to te
 To run the simulation:
 
 ```bash
+# Run for a single user
 python -m simulation.run_simulation
+
+# Run for multiple users
+python -m simulation.run_simulation --users 10
+
+# Run a specific scenario
+python -m simulation.run_simulation --user-id test_user --scenario improved_diet
 ```
 
 ## 🎯 Use Cases for Insurance Companies
@@ -153,7 +149,7 @@ python -m simulation.run_simulation
 This system offers significant value to life insurance companies:
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/insurance_value.png" alt="Insurance Value Proposition" width="700" />
+  <img src="./docs/images/insurance_value.png" alt="Insurance Value Proposition" width="700" />
 </div>
 
 - **Improved Underwriting**: More accurate risk assessment through detailed health profiles and predictive models
@@ -167,7 +163,7 @@ This system offers significant value to life insurance companies:
 ## 🧪 Example Output
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JJshome/ai-life-management-system/main/docs/images/prediction_example.png" alt="Prediction Example" width="700" />
+  <img src="./docs/images/prediction_example.png" alt="Prediction Example" width="700" />
 </div>
 
 The system provides comprehensive output including:
@@ -195,10 +191,8 @@ The system prioritizes user privacy and data security:
 Detailed documentation is available in the [docs](./docs) directory:
 
 - [System Architecture](./docs/architecture.md)
-- [Module Documentation](./docs/modules.md)
-- [API Reference](./docs/api.md)
-- [Simulation Guide](./docs/simulation.md)
-- [Development Guide](./docs/development.md)
+- [Impedance Technology](./docs/technologies/impedance_tech.md)
+- [Simulation Guide](./simulation/README.md)
 
 ## ⚠️ Disclaimer
 
