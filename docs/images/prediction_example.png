@@ -1,0 +1,124 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a8f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#42b0d1" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect x="0" y="0" width="700" height="500" fill="url(#bg-gradient)" rx="10" ry="10"/>
+  
+  <!-- Dashboard frame -->
+  <rect x="20" y="20" width="660" height="460" rx="10" fill="#ffffff" opacity="0.9" filter="url(#shadow)"/>
+  
+  <!-- Dashboard header -->
+  <rect x="20" y="20" width="660" height="60" rx="10" fill="#2c3e50"/>
+  <text x="50" y="55" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">AI Life Management System - Prediction Results</text>
+  
+  <!-- User profile section -->
+  <g transform="translate(80, 110)">
+    <circle cx="0" cy="0" r="30" fill="#3498db" filter="url(#shadow)"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">JD</text>
+    <text x="50" y="-15" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50">John Doe, 45</text>
+    <text x="50" y="10" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">Male, Non-smoker</text>
+  </g>
+  
+  <!-- Main prediction section -->
+  <rect x="40" y="160" width="620" height="100" rx="10" fill="#ecf0f1" filter="url(#shadow)"/>
+  
+  <!-- Life expectancy prediction -->
+  <g transform="translate(150, 210)">
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#2c3e50" text-anchor="middle">Life Expectancy</text>
+    <rect x="-100" y="0" width="200" height="30" rx="5" fill="#ffffff" stroke="#3498db" stroke-width="1"/>
+    <rect x="-100" y="0" width="150" height="30" rx="5" fill="#3498db"/>
+    <text x="-25" y="20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">89.4 years</text>
+    <text x="90" y="20" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">± 4.2</text>
+  </g>
+  
+  <!-- Biological age prediction -->
+  <g transform="translate(450, 210)">
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#2c3e50" text-anchor="middle">Biological Age</text>
+    <rect x="-100" y="0" width="200" height="30" rx="5" fill="#ffffff" stroke="#e74c3c" stroke-width="1"/>
+    <rect x="-100" y="0" width="80" height="30" rx="5" fill="#e74c3c"/>
+    <text x="-60" y="20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">40.2</text>
+    <text x="20" y="20" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">Chronological: 45</text>
+  </g>
+  
+  <!-- Health risks section -->
+  <g transform="translate(180, 300)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#2c3e50">Health Risk Assessment</text>
+    
+    <!-- Risk meter 1: Cardiovascular -->
+    <g transform="translate(0, 40)">
+      <text x="-120" y="0" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="start">Cardiovascular</text>
+      <rect x="-20" y="-10" width="200" height="20" rx="10" fill="#ecf0f1"/>
+      <rect x="-20" y="-10" width="70" height="20" rx="10" fill="#f1c40f"/>
+      <circle cx="50" cy="0" r="10" fill="#ffffff" stroke="#7f8c8d" stroke-width="1"/>
+      <text x="190" y="0" font-family="Arial, sans-serif" font-size="14" fill="#f1c40f" text-anchor="start">Moderate</text>
+    </g>
+    
+    <!-- Risk meter 2: Metabolic -->
+    <g transform="translate(0, 80)">
+      <text x="-120" y="0" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="start">Metabolic</text>
+      <rect x="-20" y="-10" width="200" height="20" rx="10" fill="#ecf0f1"/>
+      <rect x="-20" y="-10" width="40" height="20" rx="10" fill="#2ecc71"/>
+      <circle cx="20" cy="0" r="10" fill="#ffffff" stroke="#7f8c8d" stroke-width="1"/>
+      <text x="190" y="0" font-family="Arial, sans-serif" font-size="14" fill="#2ecc71" text-anchor="start">Low</text>
+    </g>
+    
+    <!-- Risk meter 3: Neurological -->
+    <g transform="translate(0, 120)">
+      <text x="-120" y="0" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="start">Neurological</text>
+      <rect x="-20" y="-10" width="200" height="20" rx="10" fill="#ecf0f1"/>
+      <rect x="-20" y="-10" width="30" height="20" rx="10" fill="#2ecc71"/>
+      <circle cx="10" cy="0" r="10" fill="#ffffff" stroke="#7f8c8d" stroke-width="1"/>
+      <text x="190" y="0" font-family="Arial, sans-serif" font-size="14" fill="#2ecc71" text-anchor="start">Low</text>
+    </g>
+  </g>
+  
+  <!-- Recommendations section -->
+  <g transform="translate(480, 300)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#2c3e50">Personalized Recommendations</text>
+    
+    <rect x="-80" y="20" width="160" height="140" rx="10" fill="#ecf0f1" filter="url(#shadow)"/>
+    
+    <!-- Recommendation 1 -->
+    <g transform="translate(0, 40)">
+      <circle cx="-60" cy="0" r="10" fill="#3498db"/>
+      <text x="-60" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">1</text>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">Increase Omega-3</text>
+    </g>
+    
+    <!-- Recommendation 2 -->
+    <g transform="translate(0, 70)">
+      <circle cx="-60" cy="0" r="10" fill="#3498db"/>
+      <text x="-60" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">2</text>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">High-Intensity Training</text>
+    </g>
+    
+    <!-- Recommendation 3 -->
+    <g transform="translate(0, 100)">
+      <circle cx="-60" cy="0" r="10" fill="#3498db"/>
+      <text x="-60" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">3</text>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">Stress Reduction</text>
+    </g>
+    
+    <!-- Recommendation 4 -->
+    <g transform="translate(0, 130)">
+      <circle cx="-60" cy="0" r="10" fill="#3498db"/>
+      <text x="-60" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">4</text>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">Sleep Optimization</text>
+    </g>
+  </g>
+  
+  <!-- Bottom disclaimer -->
+  <rect x="40" y="450" width="620" height="20" rx="5" fill="#2c3e50" opacity="0.8"/>
+  <text x="350" y="464" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+    Based on Ucaretron Inc. Patented Technology - For Demonstration Purposes Only
+  </text>
+</svg>
