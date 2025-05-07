@@ -1,108 +1,128 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background elements -->
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a3a8f" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#42b0d1" stop-opacity="0.2"/>
+    <linearGradient id="module1Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498DB" />
+      <stop offset="100%" stop-color="#2980B9" />
     </linearGradient>
+    <linearGradient id="module2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B59B6" />
+      <stop offset="100%" stop-color="#8E44AD" />
+    </linearGradient>
+    <linearGradient id="module3Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2ECC71" />
+      <stop offset="100%" stop-color="#27AE60" />
+    </linearGradient>
+    <linearGradient id="module4Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1C40F" />
+      <stop offset="100%" stop-color="#F39C12" />
+    </linearGradient>
+    <linearGradient id="module5Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E74C3C" />
+      <stop offset="100%" stop-color="#C0392B" />
+    </linearGradient>
+    <linearGradient id="module6Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1ABC9C" />
+      <stop offset="100%" stop-color="#16A085" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#00000033" />
+    </filter>
   </defs>
   
-  <!-- Decorative background -->
-  <rect x="0" y="0" width="800" height="600" fill="url(#bgGradient)"/>
-  <circle cx="400" cy="300" r="280" fill="none" stroke="#5a8de3" stroke-width="1.5" stroke-dasharray="8,8"/>
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8F9FA" rx="10" ry="10" />
   
-  <!-- System Core -->
-  <g transform="translate(400, 300)">
-    <circle cx="0" cy="0" r="80" fill="#2c3e50" stroke="#3498db" stroke-width="3"/>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">AI Life Management</text>
-    <text x="0" y="25" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">Core System</text>
-  </g>
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">System Architecture</text>
   
-  <!-- Module 110: Data Collection -->
-  <g transform="translate(275, 150)">
-    <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
-    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Data Collection</text>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (110)</text>
-    <path d="M0,15 m-25,0 l10,10 l10,-10 l10,10 l10,-10 l10,10" stroke="#ffffff" stroke-width="2" fill="none"/>
-  </g>
+  <!-- Modules -->
+  <!-- Data Collection Module (110) -->
+  <rect x="100" y="100" width="200" height="80" rx="10" ry="10" fill="url(#module1Gradient)" filter="url(#shadow)" />
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Data Collection Module</text>
+  <text x="200" y="155" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">(110)</text>
   
-  <!-- Module 120: AI Analysis -->
-  <g transform="translate(525, 150)">
-    <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
-    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">AI Analysis</text>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (120)</text>
-    <g transform="translate(-30, 15)">
-      <circle cx="0" cy="0" r="8" fill="#ffffff"/>
-      <circle cx="30" cy="0" r="8" fill="#ffffff"/>
-      <circle cx="60" cy="0" r="8" fill="#ffffff"/>
-    </g>
-  </g>
+  <!-- AI Analysis Module (120) -->
+  <rect x="500" y="100" width="200" height="80" rx="10" ry="10" fill="url(#module2Gradient)" filter="url(#shadow)" />
+  <text x="600" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">AI Analysis Module</text>
+  <text x="600" y="155" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">(120)</text>
   
-  <!-- Module 130: Prediction Engine -->
-  <g transform="translate(650, 300)">
-    <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
-    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Prediction</text>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (130)</text>
-    <polyline points="-30,15 -20,25 -10,10 0,30 10,20 20,30 30,15" stroke="#ffffff" stroke-width="2" fill="none"/>
-  </g>
+  <!-- Prediction and Recommendation Engine (130) -->
+  <rect x="500" y="220" width="200" height="80" rx="10" ry="10" fill="url(#module3Gradient)" filter="url(#shadow)" />
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Prediction and</text>
+  <text x="600" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Recommendation Engine</text>
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">(130)</text>
   
-  <!-- Module 140: Monitoring -->
-  <g transform="translate(525, 450)">
-    <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
-    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Monitoring</text>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (140)</text>
-    <rect x="-30" y="10" width="60" height="15" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
-    <rect x="-25" y="15" width="50" height="5" rx="1" fill="#ffffff"/>
-  </g>
+  <!-- Monitoring and Management Module (140) -->
+  <rect x="500" y="340" width="200" height="80" rx="10" ry="10" fill="url(#module4Gradient)" filter="url(#shadow)" />
+  <text x="600" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Monitoring and</text>
+  <text x="600" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Management Module</text>
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">(140)</text>
   
-  <!-- Module 150: Security -->
-  <g transform="translate(275, 450)">
-    <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#f39c12" stroke="#d35400" stroke-width="2"/>
-    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">Security</text>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (150)</text>
-    <path d="M0,15 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0" fill="none" stroke="#ffffff" stroke-width="2"/>
-    <path d="M-5,-5 L0,-12 L5,-5 L10,0 L5,5 L0,12 L-5,5 L-10,0 Z" transform="translate(0, 15)" fill="#ffffff"/>
-  </g>
+  <!-- Security Module (150) -->
+  <rect x="100" y="340" width="200" height="80" rx="10" ry="10" fill="url(#module5Gradient)" filter="url(#shadow)" />
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Security Module</text>
+  <text x="200" y="400" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">(150)</text>
   
-  <!-- Module 160: User Interface -->
-  <g transform="translate(150, 300)">
-    <rect x="-75" y="-45" width="150" height="90" rx="10" fill="#1abc9c" stroke="#16a085" stroke-width="2"/>
-    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" text-anchor="middle">User Interface</text>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Module (160)</text>
-    <rect x="-25" y="10" width="50" height="30" rx="3" fill="none" stroke="#ffffff" stroke-width="2"/>
-    <line x1="-15" y1="20" x2="15" y2="20" stroke="#ffffff" stroke-width="2"/>
-    <line x1="-15" y1="30" x2="5" y2="30" stroke="#ffffff" stroke-width="2"/>
-  </g>
+  <!-- User Interface Module (160) -->
+  <rect x="100" y="220" width="200" height="80" rx="10" ry="10" fill="url(#module6Gradient)" filter="url(#shadow)" />
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">User Interface Module</text>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">(160)</text>
   
-  <!-- Connection lines -->
-  <g stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5">
-    <!-- Data Collection to Core -->
-    <line x1="325" y1="200" x2="370" y2="255"/>
-    
-    <!-- AI Analysis to Core -->
-    <line x1="475" y1="200" x2="430" y2="255"/>
-    
-    <!-- Prediction to Core -->
-    <line x1="575" y1="300" x2="480" y2="300"/>
-    
-    <!-- Monitoring to Core -->
-    <line x1="475" y1="400" x2="430" y2="345"/>
-    
-    <!-- Security to Core -->
-    <line x1="325" y1="400" x2="370" y2="345"/>
-    
-    <!-- User Interface to Core -->
-    <line x1="225" y1="300" x2="320" y2="300"/>
-  </g>
+  <!-- User -->
+  <circle cx="400" cy="500" r="40" fill="#34495E" filter="url(#shadow)" />
+  <text x="400" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">User</text>
   
-  <!-- Ucaretron Badge -->
-  <g transform="translate(400, 560)">
-    <rect x="-150" y="-25" width="300" height="50" rx="25" fill="#2c3e50" stroke="#3498db" stroke-width="2"/>
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">Powered by Ucaretron Inc. Patented Technology</text>
-    <g transform="translate(-130, 0)">
-      <circle cx="0" cy="0" r="15" fill="#3498db"/>
-      <path d="M-5,-5 L0,-12 L5,-5 L10,0 L5,5 L0,12 L-5,5 L-10,0 Z" fill="#ffffff"/>
-    </g>
-  </g>
+  <!-- Connecting Lines -->
+  <!-- Data Collection to AI Analysis -->
+  <line x1="300" y1="140" x2="500" y2="140" stroke="#34495E" stroke-width="2" />
+  <polygon points="490,135 500,140 490,145" fill="#34495E" />
+  
+  <!-- AI Analysis to Prediction -->
+  <line x1="600" y1="180" x2="600" y2="220" stroke="#34495E" stroke-width="2" />
+  <polygon points="595,210 600,220 605,210" fill="#34495E" />
+  
+  <!-- Prediction to Monitoring -->
+  <line x1="600" y1="300" x2="600" y2="340" stroke="#34495E" stroke-width="2" />
+  <polygon points="595,330 600,340 605,330" fill="#34495E" />
+  
+  <!-- Security Module connections -->
+  <path d="M 200,340 C 200,300 350,280 400,280 C 450,280 600,300 600,340" stroke="#34495E" stroke-width="2" fill="none" stroke-dasharray="5,3" />
+  
+  <!-- UI to User -->
+  <line x1="200" y1="300" x2="380" y2="470" stroke="#34495E" stroke-width="2" />
+  <polygon points="375,465 380,470 385,465" fill="#34495E" />
+  
+  <!-- Monitoring to User -->
+  <line x1="600" y1="420" x2="420" y2="470" stroke="#34495E" stroke-width="2" />
+  <polygon points="425,465 420,470 415,465" fill="#34495E" />
+  
+  <!-- User to Data Collection (feedback loop) -->
+  <path d="M 400,460 C 400,420 300,380 200,200" stroke="#34495E" stroke-width="2" fill="none" stroke-dasharray="5,3" />
+  <polygon points="195,205 200,200 205,205" fill="#34495E" />
+  
+  <!-- Central Data Flow Hub -->
+  <ellipse cx="400" cy="260" rx="60" ry="30" fill="#BDC3C7" opacity="0.8" />
+  <text x="400" y="265" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50" text-anchor="middle">Core System</text>
+  
+  <!-- Central connections -->
+  <line x1="300" y1="260" x2="340" y2="260" stroke="#34495E" stroke-width="2" />
+  <polygon points="335,255 340,260 335,265" fill="#34495E" />
+  
+  <line x1="460" y1="260" x2="500" y2="260" stroke="#34495E" stroke-width="2" />
+  <polygon points="495,255 500,260 495,265" fill="#34495E" />
+  
+  <line x1="400" y1="140" x2="400" y2="230" stroke="#34495E" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="395,225 400,230 405,225" fill="#34495E" />
+  
+  <!-- Legend -->
+  <rect x="600" y="500" width="150" height="80" rx="5" ry="5" fill="#FFFFFF" stroke="#34495E" stroke-width="1" />
+  <text x="675" y="520" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50" text-anchor="middle">Legend</text>
+  
+  <line x1="610" y1="540" x2="630" y2="540" stroke="#34495E" stroke-width="2" />
+  <text x="675" y="545" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50" text-anchor="middle">Data Flow</text>
+  
+  <line x1="610" y1="560" x2="630" y2="560" stroke="#34495E" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="675" y="565" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50" text-anchor="middle">Secure Connection</text>
 </svg>
