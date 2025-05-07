@@ -1,7 +1,7 @@
 # 🌟 AI-based Life Management and Aging Preparation Decision System 🌟
 
 <div align="center">
-  <img src="./docs/images/main_banner.png" alt="AI Life Management System" width="800" />
+  <img src="./docs/images/main_banner.svg" alt="AI Life Management System" width="800" />
   
   <h3>Powered by Ucaretron Inc. Patented Technology</h3>
   <p>🚀 Predict Life Expectancy | 💓 Optimize Health | 💰 Plan Finances | 🧠 Live Smarter</p>
@@ -14,7 +14,7 @@
 The AI-based Life Management System is a cutting-edge solution that uses advanced AI to predict individual life expectancy and provide personalized recommendations for health optimization, aging preparation, and quality of life improvements.
 
 <div align="center">
-  <img src="./docs/images/system_overview.png" alt="System Overview" width="700" />
+  <img src="./docs/images/system_overview.svg" alt="System Overview" width="700" />
 </div>
 
 ## 🏗️ System Architecture
@@ -22,7 +22,7 @@ The AI-based Life Management System is a cutting-edge solution that uses advance
 The system consists of six integrated modules working together to deliver a comprehensive life management solution:
 
 <div align="center">
-  <img src="./docs/images/system_architecture.png" alt="System Architecture" width="800" />
+  <img src="./docs/images/system_architecture.svg" alt="System Architecture" width="800" />
 </div>
 
 ### 🔹 Data Collection Module (110)
@@ -70,7 +70,7 @@ The system consists of six integrated modules working together to deliver a comp
 ## 🔬 Key Technologies
 
 <div align="center">
-  <img src="./docs/images/key_technologies.png" alt="Key Technologies" width="600" />
+  <img src="./docs/images/key_technologies.svg" alt="Key Technologies" width="600" />
 </div>
 
 - **Ultra-high-speed communication**: Enables seamless data transfer between system components and external healthcare systems
@@ -122,7 +122,7 @@ visualizer.visualize_life_expectancy(results["user_data"]["user_profile"]["user_
 The system includes a comprehensive simulation environment that allows you to test its capabilities with synthetic data. The simulation includes:
 
 <div align="center">
-  <img src="./docs/images/simulation_dashboard.png" alt="Simulation Dashboard" width="800" />
+  <img src="./docs/images/simulation_dashboard.svg" alt="Simulation Dashboard" width="800" />
 </div>
 
 - Synthetic user profiles with realistic health parameters
@@ -149,7 +149,7 @@ python -m simulation.run_simulation --user-id test_user --scenario improved_diet
 This system offers significant value to life insurance companies:
 
 <div align="center">
-  <img src="./docs/images/insurance_value.png" alt="Insurance Value Proposition" width="700" />
+  <img src="./docs/images/insurance_value.svg" alt="Insurance Value Proposition" width="700" />
 </div>
 
 - **Improved Underwriting**: More accurate risk assessment through detailed health profiles and predictive models
@@ -163,7 +163,7 @@ This system offers significant value to life insurance companies:
 ## 🧪 Example Output
 
 <div align="center">
-  <img src="./docs/images/prediction_example.png" alt="Prediction Example" width="700" />
+  <img src="./docs/images/prediction_example.svg" alt="Prediction Example" width="700" />
 </div>
 
 The system provides comprehensive output including:
